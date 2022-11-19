@@ -111,7 +111,7 @@ services:
       - redis
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.fintwit-streaming.rule=Host(`fintwit.io`) && Path(`/api/v1/streaming`))"
+      - "traefik.http.routers.fintwit-streaming.rule=Host(`fintwit.io`) && Path(`/api/v1/streaming`)"
       - 'traefik.http.routers.fintwit-streaming.service=fintwit-streaming'
       - "traefik.http.routers.fintwit-streaming.entrypoints=websecure"
       - "traefik.http.routers.fintwit-streaming.tls=true"
