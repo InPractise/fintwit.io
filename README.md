@@ -1,3 +1,18 @@
+# fintwit.io
+
+Initial setup with docker compose
+```bash
+# https://gist.github.com/TrillCyborg/84939cd4013ace9960031b803a0590c4
+# generate .env.production, init database, compile assets
+docker compose run --rm web bundle exec rake mastodon:setup
+sudo chown -R 991:991 public/system
+```
+
+
+
+# mastodon README
+
+
 <h1><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./lib/assets/wordmark.dark.png?raw=true">
   <source media="(prefers-color-scheme: light)" srcset="./lib/assets/wordmark.light.png?raw=true">
